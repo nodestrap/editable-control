@@ -1,6 +1,6 @@
 {
   "name": "@nodestrap/editable-control",
-  "version": "4.0.0",
+  "version": "4.0.1",
   "description": "A generic element with valid/invalid state.",
   "type": "module",
   "main": "dist/EditableControl.jsx",
