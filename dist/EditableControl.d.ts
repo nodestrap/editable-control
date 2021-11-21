@@ -71,7 +71,6 @@ export declare const useValidInvalidState: (props: ValidationProps, validator?: 
 export declare const usesEditableControlLayout: () => StyleCollection;
 export declare const usesEditableControlVariants: () => StyleCollection;
 export declare const usesEditableControlStates: () => StyleCollection;
-export declare const usesEditableControl: () => StyleCollection;
 export declare const useEditableControlSheet: import("@cssfn/types").Factory<import("jss").Classes<"main">>;
 export declare const cssProps: import("@cssfn/css-config").Refs<{
     '@keyframes valid': PropEx.Keyframes;
