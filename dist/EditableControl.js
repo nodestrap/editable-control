@@ -460,15 +460,13 @@ export function EditableControl(props) {
     const validInvalidState = useValidInvalidState(props, inputValidator.validator);
     // jsx:
     const inputRef = useRef(null);
-    return (<Control 
-    // other props:
-    {...props} 
-    // classes:
-    mainClass={props.mainClass ?? sheet.main} stateClasses={[...(props.stateClasses ?? []),
+    return (React.createElement(Control, { ...props, 
+        // classes:
+        mainClass: props.mainClass ?? sheet.main, stateClasses: [...(props.stateClasses ?? []),
             validInvalidState.class,
-        ]} 
-    // validations:
-    elmRef={(elm) => {
+        ], 
+        // validations:
+        elmRef: (elm) => {
             setRef(props.elmRef, elm);
             if (elm) {
                 if (elm.validity) {
@@ -482,17 +480,17 @@ export function EditableControl(props) {
                 if (inputRef.current)
                     inputValidator.handleInit(inputRef.current);
             } // if
-        }} onChange={(e) => {
+        }, onChange: (e) => {
             props.onChange?.(e);
             // validations:
             if (inputRef.current)
                 inputValidator.handleChange(inputRef.current);
-        }} 
-    // events:
-    onAnimationEnd={(e) => {
+        }, 
+        // events:
+        onAnimationEnd: (e) => {
             props.onAnimationEnd?.(e);
             // validations:
             validInvalidState.handleAnimationEnd(e);
-        }}/>);
+        } }));
 }
 export { EditableControl as default };
