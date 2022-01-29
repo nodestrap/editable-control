@@ -1,6 +1,6 @@
 {
   "name": "@nodestrap/editable-control",
-  "version": "4.0.6",
+  "version": "4.0.7",
   "description": "A generic element with valid/invalid state.",
   "type": "module",
   "main": "dist/EditableControl.js",
@@ -34,7 +34,7 @@
     "@cssfn/css-config": "^1.0.4",
     "@cssfn/css-types": "^1.0.4",
     "@cssfn/css-var": "^1.0.4",
-    "@cssfn/cssfn": "^1.0.10",
+    "@cssfn/cssfn": "^1.0.11",
     "@cssfn/react-cssfn": "^1.0.11",
     "@nodestrap/accessibilities": "^4.0.4",
     "@nodestrap/basic": "^4.0.7",

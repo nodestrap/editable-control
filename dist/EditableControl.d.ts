@@ -106,6 +106,7 @@ export interface EditableControlProps<TElement extends EditableControlElement = 
     form?: string;
     defaultValue?: string | number | ReadonlyArray<string>;
     value?: string | number | ReadonlyArray<string>;
+    onChange?: React.ChangeEventHandler<TElement>;
     customValidator?: CustomValidatorHandler;
     required?: boolean;
 }
